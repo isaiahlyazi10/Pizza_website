@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Slice Pizza</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
+  <script src="https://kit.fontawesome.com/080d8acc0a.js" crossorigin="anonymous"></script>
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Trirong", serif;
+  background-color: #0f0f0f;
+  color: #f5f5f5;
+  scroll-behavior: smooth;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  background: transparent;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+}
+
+nav a {
+  color: #f5f5f5;
+  margin-left: 1.5rem;
+  text-decoration: none;
+  font-weight: 400px;
+}
+
+nav a:hover {
+  background-color: red;
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  transition: 1s;
+}
+
+h2{
+  font-size: larger;
+  font-weight: 900px bolder;
+  font-family:"Trirong", serif";
+}
+
+.hero {
+  height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  text-align: center;
+}
+
+.hero img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(50%);
+  z-index: -1;
+}
+
+.hero-text {
+  padding: 2rem;
+}
+
+.hero h2 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.btn {
+  background: #ff4d4d;
+  color: #000;
+  padding: 0.8rem 1.8rem;
+  border: none;
+  border-radius: 30px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: #ff6666;
+}
+
+
+section {
+  padding: 5rem 2rem;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.menu {
+  display:grid;
+  grid-template-columns: repeat(auto-fit, minmax(50px, 4fr));
+  gap: 2rem;
+}
+
+.pizza {
+  background: #1a1a1a;
+  padding: 2rem;
+  border-radius: 15px;
+  text-align: center;
+}
+
+.price {
+  color: #ff4d4d;
+  font-weight: 700;
+}
+
+.about {
+  text-align: center;
+  color: #ccc;
+  display:grid;
+  
+}
+
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  align-items: center;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+footer {
+  background: #111;
+  text-align: center;
+  padding: 10px;
+  color: #777;
+}
+
+.isaiah{
+  background-color: grey ;
+  width: 100%;
+
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1>Slice <i class="fa-solid fa-pizza-slice"></i> </h1>
+  <nav>
+    <a href="#menu">Menu</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+
+<div class="hero">
+  <img src="pizza.jpg" alt="pizza">
+  <div class="hero-text">
+    <h2> <strong>ONLY THE BEST</strong> </h2>
+    <p>Serving the best pizza 24/7</p>
+    <button class="btn" onclick="scrollToMenu()">View Menu</button>
+  </div>
+</div>
+
+<section id="menu">
+  <h3>Our Pizzas</h3>
+  <div class="menu">
+    <div class="pizza">
+      <h4>Pepperoni Blast</h4>
+      <p>Classic pepperoni, mozzarella, tomato sauce</p>
+      <p class="price">$8.99</p>
+      <br>
+      <i class="fa-solid fa-pizza-slice fa-spin" style="color: #a21035;"></i>
+    </div>
+    <div class="pizza">
+      <h4>Veggie</h4>
+      <p>Peppers, olives, onions, mushrooms</p>
+      <p class="price">$7.99</p>
+      <br>
+      <i class="fa-solid fa-seedling fa-spin" style="color: #28730d;"></i>
+    </div>
+    <div class="pizza">
+      <h4>BBQ Chicken</h4>
+      <p>BBQ sauce, grilled chicken, red onions</p>
+      <p class="price">$9.99</p>
+      <br>
+      <i class="fa-solid fa-bottle-droplet fa-spin" style="color: #5f0714;"></i>
+    </div>
+  </div> <br>
+  <div class="pizza">
+      <h4>Ultra Pizza Special</h4>
+      <p>BBQ sauce, grilled chicken, red onions, diced beef, thick crust, extra pepperoni!</p>
+      <p class="price">$19.99</p>
+      <br>
+      <i class="fa-solid fa-certificate fa-spin fa-3x" style="color: #a30525;"></i>
+    </div>
+  </div>
+</section>
+
+<section id="about" class="about isaiah" >
+  <h3>About Us</h3>
+  <div>
+  <p class="about">
+    I made slice at prices anyone can afford. We use fresh ingredients to deliver pizza that hits different.<br>
+    We aspire to change the whole pizza industry and set a better standard. Even though our pizzas are cheap they are way <br>
+    better than any other. Our pizzas have been improved over the years and even world renoun chef Gordon Ramsey loves them.
+  </p>
+</div>
+</section>
+
+<section id="contact">
+  <h3>Contact</h3>
+  <div class="contact">
+    <div class="contact-item">
+      <i class="fa-solid fa-location-dot" style="color:#cc000a;"></i>
+      <span>Kampala, Uganda</span>
+    </div>
+    <div class="contact-item">
+      <i class="fa-solid fa-phone" style="color:#a30008;"></i>
+      <span>+256 717 105 000</span>
+    </div>
+    <div class="contact-item">
+      <i class="fa-solid fa-envelope" style="color:#a3051d;"></i>
+      <span>Slice@email.com</span>
+    </div>
+  </div>
+</section>
+
+<footer>
+  © 2026 Slice Pizza ⋅ est 2026 <br> ISAIAH MADE THIS 
+  <br><br><br>
+ 
+</footer>
+
+<script>
+function scrollToMenu() {
+  document.getElementById("menu").scrollIntoView({ behavior: "smooth" });
+}
+</script>
+
+</body>
+</html>
