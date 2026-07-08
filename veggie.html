@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Slice Pizza</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
+  <script src="https://kit.fontawesome.com/080d8acc0a.js" crossorigin="anonymous"></script>
+
+<style>
+.pizza {
+  background: #1a1a1a;
+  padding: 2rem;
+  border-radius: 15px;
+  text-align: center;
+}
+
+.hero img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(50%);
+  z-index: -1;
+}
+
+.price {
+  color: #ff4d4d;
+  font-weight: 700;
+}
+
+.order-btn{
+    background:#ff4d4d;
+    color:white;
+    border:none;
+    padding:10px 20px;
+    border-radius:20px;
+    cursor:pointer;
+    font-family:"Trirong", serif;
+    transition:0.3s;
+}
+
+.order-btn:hover{
+    background:#ff6666;
+    transform:scale(1.05);
+}
+
+</style>
+</head>
+<section>
+
+<div class="pizza">
+    <img src="pizza.jpg" alt="pizza">
+    <h4>Veggie</h4>
+      <p>Peppers, olives, onions, mushrooms</p>
+      <p class="price">$9.99</p>
+    
+    
+
+    <button class="order-btn" onclick="orderPizza('Veggie')">Order Now </button>
+
+    <br><br>
+
+     <i class="fa-solid fa-seedling fa-spin" style="color: #28730d;"></i>
+</div>
+</section>
+
+<footer>
+  © 2026 Slice Pizza ⋅ est 2026 <br> ISAIAH MADE THIS 
+  <br><br><br>
+ 
+</footer>
+
+</html> 
