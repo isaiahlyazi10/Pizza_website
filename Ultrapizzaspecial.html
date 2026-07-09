@@ -158,6 +158,18 @@ footer {
   background-color: grey ;
   width: 100%;
 
+
+}
+
+.bg-image{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+  filter: brightness(50%);
 }
 
 </style>
@@ -165,6 +177,8 @@ footer {
 <section>
 
 <div class="pizza">
+
+<img class="bg-image" src="pizza.jpg" alt="Pizza Background">
    <h4>Ultra Pizza Special</h4>
       <p>BBQ sauce, grilled chicken, red onions, diced beef, thick crust, extra pepperoni!</p>
       <p class="price">$19.99</p>

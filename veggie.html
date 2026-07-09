@@ -160,11 +160,23 @@ footer {
 
 }
 
+.bg-image{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+  filter: brightness(50%);
+}
+
 </style>
 </head>
 <section>
 
 <div class="pizza">
+  <img class="bg-image" src="pizza.jpg" alt="Pizza Background">
     <h4>Veggie</h4>
       <p>Peppers, olives, onions, mushrooms</p>
       <p class="price">$9.99</p>
