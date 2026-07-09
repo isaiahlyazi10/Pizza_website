@@ -7,10 +7,60 @@
   <script src="https://kit.fontawesome.com/080d8acc0a.js" crossorigin="anonymous"></script>
 
 <style>
-.pizza {
-  background: #1a1a1a;
-  padding: 2rem;
-  border-radius: 15px;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Trirong", serif;
+  background-color: #0f0f0f;
+  color: #f5f5f5;
+  scroll-behavior: smooth;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  background: transparent;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+}
+
+nav a {
+  color: #f5f5f5;
+  margin-left: 1.5rem;
+  text-decoration: none;
+  font-weight: 400px;
+}
+
+nav a:hover {
+  background-color: red;
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  transition: 1s;
+}
+
+h2{
+  font-size: larger;
+  font-weight: 900px bolder;
+  font-family:"Trirong", serif";
+}
+
+.hero {
+  height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
   text-align: center;
 }
 
@@ -23,25 +73,91 @@
   z-index: -1;
 }
 
+.hero-text {
+  padding: 2rem;
+}
+
+.hero h2 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.btn {
+  background: #ff4d4d;
+  color: #000;
+  padding: 0.8rem 1.8rem;
+  border: none;
+  border-radius: 30px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: #ff6666;
+}
+
+
+section {
+  padding: 5rem 2rem;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.menu {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.pizza {
+  background: #1a1a1a;
+  padding: 2rem;
+  border-radius: 15px;
+  text-align: center;
+}
+
 .price {
   color: #ff4d4d;
   font-weight: 700;
 }
 
-.order-btn{
-    background:#ff4d4d;
-    color:white;
-    border:none;
-    padding:10px 20px;
-    border-radius:20px;
-    cursor:pointer;
-    font-family:"Trirong", serif;
-    transition:0.3s;
+.about {
+  text-align: center;
+  color: #ccc;
+  display:grid;
+  
 }
 
-.order-btn:hover{
-    background:#ff6666;
-    transform:scale(1.05);
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  align-items: center;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+footer {
+  background: #111;
+  text-align: center;
+  padding: 10px;
+  color: #777;
+}
+
+.isaiah{
+  background-color: grey ;
+  width: 100%;
+
 }
 
 </style>
@@ -49,7 +165,6 @@
 <section>
 
 <div class="pizza">
-    <img src="pizza.jpg" alt="pizza">
     <h4>BBQ Chicken</h4>
       <p>BBQ sauce, grilled chicken, red onions</p>
       <p class="price">$12.99</p>
